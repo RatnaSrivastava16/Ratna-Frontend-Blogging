@@ -37,5 +37,3 @@ const {
 }
 
 export default useArticleQuery
-
-

@@ -1,8 +1,7 @@
 import classNames from 'classnames'
 import React from 'react'
-import { ArticleList } from '../components'
+import { ArticleList, PopularTags } from '../components'
 import { useArticlesQuery, useAuth } from '../hooks'
-import './Home.css'
 
 const initialFilters = { tag: '', offset: null, feed: false }
 
@@ -60,6 +59,9 @@ function Home() {
             </div>
             <ArticleList  />
           </div>
+          <div className='col-md-3'>
+            <PopularTags />
+          </div>
           
         </div>
       </div>
@@ -68,5 +70,4 @@ function Home() {
 }
 
 export default Home
-
 

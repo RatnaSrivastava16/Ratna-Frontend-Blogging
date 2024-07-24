@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 // import { useArticleQuery } from '../hooks'
+import profile from '../assets/profile.png'
 
 function ArticlePreview({ article }) {
   // const { data } = useArticleQuery({ article })
@@ -10,7 +11,7 @@ function ArticlePreview({ article }) {
     <div className="article-preview" key={slug}>
       <div className="article-meta">
         <Link to={`/profile/${author?.username}`}>
-          <img src={author?.image} />
+          <img src={profile} />
         </Link>
         <div className="info">
           <Link to={`/profile/${author?.username}`} className="author">

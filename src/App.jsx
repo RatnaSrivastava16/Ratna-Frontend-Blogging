@@ -49,7 +49,7 @@ function App() {
             <Route path="/article/:slug" element={<Article/>} />
             <Route path="/profile/:username" element={<h1>Profile </h1>} />
             <Route path="/@:username" element={<AuthRoute />}>
-              <Route path="/@:username" element={<h1>Profile </h1>} />
+            <Route path="/@:username" element={<h1>Profile </h1>} />
             </Route>
           </Routes>
         </main>

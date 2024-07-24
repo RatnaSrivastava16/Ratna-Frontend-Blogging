@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useAuth } from '../hooks'
-
+import profile from '../assets/profile.png'
 function ArticleMeta({author,createdAt}) {
   const { authUser } = useAuth()
 
@@ -11,7 +11,7 @@ function ArticleMeta({author,createdAt}) {
   return (
     <div className="article-meta">
       <Link to={`/profile/${author?.username}`}>
-        <img src={author?.image} />
+        <img src={profile} />
       </Link>
       <div className="info">
         <Link to={`/profile/${author?.username}`} className="author">

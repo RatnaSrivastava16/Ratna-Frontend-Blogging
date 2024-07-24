@@ -1,3 +1,72 @@
-#home{
-    background-color: black;
+body{
+    /* background-image: url('backgroundimg5.jpg'); */
+    /* background-size:cover; */
+    background-blend-mode:darken;
+    color:white;
+    font-family: cursive;
+    background-color:#d2a3d8;
+
+    animation-name: anim;
+    animation-duration: 8s;
+    animation-iteration-count: 2;
+
+}
+.home-page .banner{
+    /* margin-top: 80px; */
+     /* background-image: url('bannerimage.jpg');  */
+     background-color:#c767d3;
+     animation-name: anim;
+    animation-duration: 8s;
+    animation-iteration-count: 2;
+
+     
+    /* opacity:0.7; */
+    display:flex;
+    align-items: center;
+    height:300px;
+    background-size: cover;
+    font-family: cursive;
+    /* border-top:3px dashed white; */
+    /* border-bottom:3px dashed white; */
+
+   
+}
+
+.home-page .banner h1{
+    font-size: 60px;
+    text-shadow:5px 3px 2px #011d41;
+    font-family: cursive;
+   
+}
+.home-page .banner p{
+    font-size: 25px;
+    text-shadow:2px 2px 1px #021936;
+   
+}
+@keyframes anim{
+    0%{background-color: #5c7aa3;}
+    25%{background-color:#d1795e;}
+    50%{    background-color:hwb(158 16% 45%);
+    }
+    75%{background-color:hwb(30 15% 36%);
+    }
+    100%{background-color:hwb(30 15% 36%);}
+}
+.nav-pills.outline-active .nav-link.active{
+    color:white !important;
+    border:2px solid white !important;
+    background-color: #5c7aa3 !important;
+    border-radius: 10px;
+    animation-name: animfeed;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 20s;
+}
+@keyframes animfeed{
+    from{    background-color: #5c7aa3 !important;
+
+        box-shadow:0px 0px 0px white;}
+    to{    background-color: #5c7aa3 !important;
+
+        box-shadow: 1px 1px 8px white;}
 }
